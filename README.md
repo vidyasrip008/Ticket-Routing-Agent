@@ -1,20 +1,83 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+Repository Structure
+Ticket-Routing-Agent/
+│── README.md
+│── .gitignore
+│── LICENSE
+│── pom.xml
+│── src/
+│   ├── main/
+│   │   ├── java/
+│   │   ├── resources/
+│   │   │   └── application.properties
+│   │   └── webapp/
+│   └── test/
+│── database/
+│   └── ticket_routing.sql
+│── docs/
+│   └── project-report.md
+1. README.md
 
-# Run and deploy your AI Studio app
+This file explains your project.
+Include:
 
-This contains everything you need to run your app locally.
+Project Title
+Description
+Features
+Technologies Used
+Installation Steps
+Usage
+Folder Structure
+Future Enhancements
+Author
+2. .gitignore
 
-View your app in AI Studio: https://ai.studio/apps/9db11253-cbc9-49af-8786-763b321b1383
+If you're using Java with Maven:
 
-## Run Locally
+target/
+*.class
+*.log
+.idea/
+.vscode/
+.settings/
+.project
+.classpath
+*.iml
+.env
+3. LICENSE
 
-**Prerequisites:**  Node.js
+Choose MIT License (recommended for student projects).
 
+4. pom.xml
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Contains Maven dependencies such as:
+
+Spring Boot
+MySQL
+OpenAI API
+Jackson
+Lombok
+5. application.properties
+spring.datasource.url=jdbc:mysql://localhost:3306/ticketdb
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+
+openai.api.key=YOUR_OPENAI_API_KEY
+6. ticket_routing.sql
+
+Contains:
+
+CREATE DATABASE
+CREATE TABLE Ticket
+CREATE TABLE Users
+Sample INSERT statements
+7. project-report.md
+
+Include:
+
+Objective
+Problem Statement
+Solution
+Architecture
+Technologies Used
+Workflow
+Future Scope
