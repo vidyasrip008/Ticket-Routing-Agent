@@ -1,0 +1,6 @@
+{
+  "name": "AI-Powered Ticket Routing",
+  "description": "An AI-powered cognitive support ticket routing assistant with real-time classification, dynamic prioritization, smart queue routing, response drafting, and SLA reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
